@@ -1,0 +1,16 @@
+.img-container {
+    display: flex;
+    justify-content: space-around;
+}
+  
+img {
+    height: 250px;
+    border-radius: 50%;
+    margin: 20px;
+}  
+
+.bold-p
+{
+    color: #a33f00;
+    font-weight: 900;
+}

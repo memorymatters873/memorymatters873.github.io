@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: "Noto Sans", sans-serif;
+    transition: 0.6s;
+
+
+}
+
+#bannerimage {
+    background-image: url("../assets/logo.png");
+    height: 405px;
+    background-color: #a33f00;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+    z-index: -1;
+  }
+
+
+.banner-text
+{
+    color: white;
+}
+
+.banner-text h1{
+    position: absolute; 
+    top: 25%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: #ffffff; 
+    text-align: center; 
+    z-index: 1; 
+    animation: banner-main 1s;
+}
+
+.banner-text a
+{
+    float: right;
+    margin-right: 20px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: white;
+    text-decoration: none;
+    z-index: 1;
+
+    animation: from_bottom 1s;
+}
+
+.letter-space:hover
+{
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+
+.banner-text img
+{
+    height: 50px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    animation: from_bottom 1s;
+
+}
+
+.banner-text p
+{
+    padding: 20px;
+    font-size: 1.2em;
+    float: left;
+    animation: from_bottom 1s;
+
+}
+
+footer
+{
+    background: rgba(127, 17, 70, 1);
+    margin-top: 50px;
+}
+
+.btn
+{
+    padding: 15px 15px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 15px;
+    background: #a33f00;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    animation: from_bottom 1s;
+
+}
+
+.btn:hover
+{
+    cursor: pointer;
+    background: #e95900;
+}
+
+
+.heading
+{
+    color:  rgba(127, 17, 70, 1);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 300;
+    animation: from_bottom 1s;
+
+}
+
+.text
+{
+    font-size: 25px;
+    animation: from_bottom 1s;
+
+}
+
+.underlined
+{
+    color: #a33f00;
+    text-decoration: underline;
+}
+
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+#logo {
+  height: 10vh;
+  width: auto;
+  margin: 0;
+  display: block;
+}
+
+.title {
+  text-align: center;
+  margin-top: 5vh;
+}
+
+.title h1 {
+  color: #a63600;
+  font-weight: 230px;
+  font-size: 3.75rem;
+}
+
+.desc {
+  margin-top: 4vh;
+  padding: 0 20px;
+}
+
+.desc p {
+  color: #5b5b5b;
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.service-overview {
+  display: flex;
+  margin: 10vh 2vw; /* Adjusted margins */
+  flex-wrap: wrap; /* Allow wrapping */
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.supportcontainer {
+  position: relative;
+  height: 20rem;
+  width: 20rem;
+  object-fit: cover;
+  text-align: center;
+  color: white;
+}
+
+.fundraisecontainer {
+  position: relative;
+  height: 20rem;
+  width: 20rem;
+  object-fit: cover;
+  text-align: center;
+  color: white;
+}
+
+.volunteercontainer {
+  position: relative;
+  height: 20rem;
+  width: 20rem;
+  object-fit: cover;
+  text-align: center;
+  color: white;
+}
+
+#serviceimg {
+  position: static;
+  height: 20rem;
+  width: 20rem;
+  object-fit: cover;
+  z-index: 1;
+  opacity: 0.8;
+  border-radius: 20px;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+
+.serviceinfo {
+  padding: 0 20px;
+}
+
+.serviceheader hr {
+  margin-bottom:10px;
+}
+
+.serviceinfo ul {
+  margin-left: 2vw;
+}
+
+.serviceinfo {
+  color: #5b5b5b;
+  font-size: 1.25rem;
+  line-height: 1.7;
+}
+
+.serviceheader {
+  margin-top: 10vh;
+  padding: 0 20px;
+}
+
+.serviceheader h1 {
+  color: #a63600;
+  font-size: 2.5rem;
+}
+
+p.boldunder {
+  font-weight: bold;
+  text-decoration: underline;
+  margin-top: 5px;
+}
+
+p.italics {
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .navbar-left {
+    font-size: 1.2rem;
+  }
+
+  .navbar-right {
+    font-size: 1rem;
+    margin-right: 1vw;
+  }
+
+  .title h1 {
+    font-size: 2.5rem;
+  }
+
+  .desc p {
+    font-size: 1rem;
+  }
+
+  .service-overview {
+    margin: 5vh 1vw;
+  }
+
+  .supportcontainer, .fundraisecontainer, .volunteercontainer {
+    height: 15rem;
+    width: 15rem;
+  }
+
+  #serviceimg {
+    height: 15rem;
+    width: 15rem;
+  }
+
+  .centered {
+    font-size: 1.5rem;
+  }
+
+  .serviceinfo {
+    font-size: 1rem;
+  }
+
+  .serviceheader h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-left {
+    font-size: 1rem;
+  }
+
+  .navbar-right {
+    font-size: 0.9rem;
+    margin-right: 0.5vw;
+  }
+
+  .title h1 {
+    font-size: 2rem;
+  }
+
+  .desc p {
+    font-size: 0.9rem;
+  }
+
+  .service-overview {
+    margin: 2vh 0.5vw;
+  }
+
+  .supportcontainer, .fundraisecontainer, .volunteercontainer {
+    height: 12rem;
+    width: 12rem;
+  }
+
+  #serviceimg {
+    height: 12rem;
+    width: 12rem;
+  }
+
+  .centered {
+    font-size: 1rem;
+  }
+
+  .serviceinfo {
+    font-size: 0.9rem;
+  }
+
+  .serviceheader h1 {
+    font-size: 1.5rem;
+  }
+}

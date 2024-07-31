@@ -1,0 +1,25 @@
+@keyframes from_bottom
+{
+    from
+    {
+        transform: translateY(20px);
+    }
+
+    to
+    {
+        transform: translateY(0);
+    }
+}
+
+@keyframes banner-main
+{
+    from
+    {
+        letter-spacing: -20px;
+    }
+
+    to
+    {
+        letter-spacing: 0;
+    }
+}
